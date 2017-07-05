@@ -32,7 +32,6 @@
     "css-loader": "0.26.1",
     "deep-extend": "0.4.1",
     "del": "2.2.2",
-    "eslint": "3.12.2",
     "eslint-config-smashcast": "^1.0.0",
     "eventsource-polyfill": "^0.9.6",
     "gulp": "3.9.1",

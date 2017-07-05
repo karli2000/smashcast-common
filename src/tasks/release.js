@@ -12,8 +12,6 @@ import chalk from 'chalk';
 const requiredFiles = ['CHANGELOG.md', 'package.json'];
 
 module.exports = config => {
-    const npmPackage = require(`${config.path}/package.json`); // eslint-disable-line import/no-dynamic-require, global-require
-
     gulp.task('bump-version', done => {
         conventionalRecommendedBump({
             preset: 'angular',
@@ -140,6 +138,6 @@ module.exports = config => {
         'commit-changes',
         'create-new-tag',
         'push-changes',
-        onEnd
+        onEnd,
     );
 };

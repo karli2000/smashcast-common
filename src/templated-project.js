@@ -10,10 +10,10 @@ class TemplatedProject {
     }
 
     copyTemplatesIfAbsent() {
-        for (const sourcePath of Object.keys(this.copyableTemplates)) {
+        for (const sourcePath of Object.keys(this.copyableTemplates)) { // eslint-disable-line no-restricted-syntax
             const fileMaps = this.copyableTemplates[sourcePath];
 
-            for (const fileName of Object.keys(fileMaps)) {
+            for (const fileName of Object.keys(fileMaps)) { // eslint-disable-line no-restricted-syntax
                 const templateMap = fileMaps[fileName];
                 const sourceFileName = sourcePath === 'tpl' ? `${fileName}.tpl` : fileName;
 
